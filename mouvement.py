@@ -14,7 +14,7 @@ previousstate = 0
 
 # Boucle infini jusqu'à CTRL-C
 while True:
-    # Lecture du capteur
+
     currentstate = GPIO.input(broche)
 		 # Si le capteur est déclenché
     if currentstate == 1 and previousstate == 0:
